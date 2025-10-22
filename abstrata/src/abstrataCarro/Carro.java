@@ -1,5 +1,4 @@
 package abstrataCarro;
-
 public abstract class Carro {
     protected String fabricante;
     protected Double peso;
@@ -10,7 +9,7 @@ public abstract class Carro {
 
 
 
-    public Carro (String fabricante,Double peso, Double preco, Double velocidadeMaxima, Double aceleracao){
+    public Carro (String fabricante,double peso, double preco, double velocidadeMaxima, double aceleracao){
         this.fabricante = fabricante;
         this.peso=peso;
         this.preco=preco;
@@ -19,9 +18,9 @@ public abstract class Carro {
         
     }
 
-    public abstract Double aceleracaomedia();
-    public abstract Double aceleracaoMaxima();
-    public abstract Double calcularPreco();
+    public abstract double aceleracaomedia();
+    public abstract double aceleracaoMaxima();
+    public abstract double calcularPreco();
     
     public void exibir(){
         System.out.println("Fabricante:"+fabricante);
@@ -29,9 +28,11 @@ public abstract class Carro {
         System.out.println("preco"+calcularPreco());
         System.out.println("Aceleração Media:"+aceleracaomedia()+"km/h");
         System.out.println("Aceleração Maxima:"+aceleracaoMaxima()+"km/h");
-
-
+        System.out.println(" ");
     }
+    
+
+
     
     
 
